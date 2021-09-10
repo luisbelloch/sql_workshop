@@ -1,0 +1,21 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bindata (2.4.10)
+    concurrent-ruby (1.1.9)
+    faker (2.19.0)
+      i18n (>= 1.6, < 2)
+    i18n (1.8.10)
+      concurrent-ruby (~> 1.0)
+    spicy-proton (2.1.12)
+      bindata (~> 2.3)
+
+PLATFORMS
+  x86_64-darwin-19
+
+DEPENDENCIES
+  faker (~> 2.19)
+  spicy-proton (~> 2.1)
+
+BUNDLED WITH
+   2.2.11
