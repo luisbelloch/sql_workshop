@@ -163,22 +163,6 @@ SHOW PROFILES;
 
 ---
 
-# Disable foreign and unique checks when bulk updates
-
-~~~
-SET FOREIGN_KEY_CHECKS = 0;
-SET UNIQUE_CHECKS = 0;
-SET AUTOCOMMIT = 0;
-
--- DO SOMETHING
-
-SET UNIQUE_CHECKS = 1;
-SET FOREIGN_KEY_CHECKS = 1;
-COMMIT;
-~~~
-
----
-
 -> *Window Functions & CTEs* <-
 
 ---
@@ -214,6 +198,34 @@ the relation between tags and matrices.
 
 ---
 
+-> *Bulk Data Loading* <-
+
+---
+
+# External Data Loading
+
+MySQL already comes with a `LOAD DATA` command that can be used
+to load CSVs, optionally replacing data.
+
+*data/load.sql*
+
+---
+
+# Disable foreign and unique checks when bulk updates
+
+~~~
+SET FOREIGN_KEY_CHECKS = 0;
+SET UNIQUE_CHECKS = 0;
+SET AUTOCOMMIT = 0;
+
+-- DO SOMETHING
+
+SET UNIQUE_CHECKS = 1;
+SET FOREIGN_KEY_CHECKS = 1;
+COMMIT;
+~~~
+
+---
 
 # Random DOs and DON'Ts
 
