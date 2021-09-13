@@ -25,6 +25,10 @@ make clean           # clean all CSV seed files
 make generate_data   # generate CSV seed files
 ```
 
+## Slides and exercises
+
+There are some exercises prepared for you, they can be found by doing `make slides` in a terminal. Solutions are in the `exercises` folder.
+
 ## Links
 
 - [High Performance MySQL](https://learning.oreilly.com/library/view/high-performance-mysql/9781492080503)
