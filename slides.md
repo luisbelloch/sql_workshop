@@ -64,8 +64,8 @@ sees data, the rest of the transactions have their own view.
 
 # Exercise
 
-Create a table to emulate a job queue, where only
-a single job can be run concurrently.
+Create a table to emulate a job queue, where there are
+many workers querying and reserving jobs from it.
 
 *queue.sql*
 
